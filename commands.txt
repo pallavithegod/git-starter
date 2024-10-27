@@ -11,7 +11,8 @@ Configuring user information used across all local repositories:
 git config --global user.name “[firstname lastname]”   
 git config --global user.email “[valid-email]”         
 git config --global color.ui auto
-gh repo list     //list all repositories                      
+gh repo list     //list all repositories 
+git log          //see all commits                     
 
 2.)
 SETUP & INIT: Configuring user information, initializing and cloning repositories
@@ -30,7 +31,7 @@ git add .           //changes of all files ADDED
 git commit [some message]    //meaningful message for our reference
 
 git push origin main  //final step to upload changes to github(LOCAL-->REMOTE)
-git pull origin main  //if changes done on github, then show them on vscode
+git pull origin main  //if changes done on github, then show them on vscode: REMOTE --> LOCAL REPO
 
 3.)
 CASE: WHEN FILE IS CREATED FIRST AND THEN IT NEEDS TO BE PUSHED IN NEW REPOSITORY
@@ -41,3 +42,31 @@ git remote -v
 git branch                                 // by default "master"
 git branch -M main                         //to rename branch to "main"
 git push -u origin main                    //The -u flag sets the upstream branch(here, "main" by default), so you can use git push without specifying the branch in the future. Thus, shortform ft future is simply "git push"
+
+4.)
+WORKING ON BRANCHES
+git checkout "branch name"                 //move to other branch
+git checkout -b "name"                     //new branch CREATED
+git checkout -b "name"                     //deleted- imp:move to another branch to delete current one 
+git push origin <branchname>               //in case we don't wanna push to main
+
+git diff <branch name>                     //compare branches (+ means extra changes added)
+git merge <branch name>
+
+OR MERGING THRU GITHUB BY PR (PULL REQUEST):
+click compare and pull request < merge pull request < confirm merge
+
+5.)
+UNDOING changes
+
+git reset                      //undo after adding
+git reset <filename>           //to a particular file
+
+git reset HEAD~1               //undo after latest commiting
+git reset <commit hash>        //undo everything after a particular commit- hash is copied by git log
+git reset --hard <commit hash>         //changes removied from vscode as well
+
+6.)
+FORKS- rough copy of others' projects
+done on github by searching project then, creating fork
+pull request can be created after making changes
