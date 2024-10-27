@@ -30,6 +30,7 @@ git add .           //changes of all files ADDED
 git commit [some message]    //meaningful message for our reference
 
 git push origin main  //final step to upload changes to github(LOCAL-->REMOTE)
+git pull origin main  //if changes done on github, then show them on vscode
 
 3.)
 CASE: WHEN FILE IS CREATED FIRST AND THEN IT NEEDS TO BE PUSHED IN NEW REPOSITORY
