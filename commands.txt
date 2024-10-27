@@ -28,3 +28,9 @@ git add .           //changes of all files ADDED
 git commit [some message]    //meaningful message for our reference
 
 git push origin main  //final step to upload changes to github(LOCAL-->REMOTE)
+
+3.)
+CASE: WHEN FILE IS CREATED FIRST AND THEN IT NEEDS TO BE PUSHED IN NEW REPOSITORY
+create file, add, commit on vscode < create new repository on git hub
+git remote add origin <url of repository>  //in vsc terminal or cmd
+git push -u origin main                    //The -u flag sets the upstream branch(here, "main" by default), so you can use git push without specifying the branch in the future.
