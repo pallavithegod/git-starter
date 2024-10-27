@@ -2,6 +2,7 @@ IMPORTANT TERMINAL COMMANDS FOR GIT AND GITHUB(SHORT)- [rest given in cheat shee
 
 cd "folder name- can be completed by clicking tab"  //to change folder which is inside the parent folder
 CD ..                                               //get out of current directory
+e:     //directly chances to e drive from c drive     
 clear
 ls -a  //list files, including hidden
 
@@ -9,7 +10,8 @@ ls -a  //list files, including hidden
 Configuring user information used across all local repositories:
 git config --global user.name “[firstname lastname]”   
 git config --global user.email “[valid-email]”         
-git config --global color.ui auto                      
+git config --global color.ui auto
+gh repo list     //list all repositories                      
 
 2.)
 SETUP & INIT: Configuring user information, initializing and cloning repositories
