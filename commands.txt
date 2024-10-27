@@ -35,5 +35,9 @@ git pull origin main  //if changes done on github, then show them on vscode
 3.)
 CASE: WHEN FILE IS CREATED FIRST AND THEN IT NEEDS TO BE PUSHED IN NEW REPOSITORY
 create file, add, commit on vscode < create new repository on git hub
-git remote add origin <url of repository>  //in vsc terminal or cmd
-git push -u origin main                    //The -u flag sets the upstream branch(here, "main" by default), so you can use git push without specifying the branch in the future.
+git init
+git remote add origin <url of repository>  //in vsc terminal or cmd //origin is changable
+git remote -v
+git branch                                 // by default "master"
+git branch -M main                         //to rename branch to "main"
+git push -u origin main                    //The -u flag sets the upstream branch(here, "main" by default), so you can use git push without specifying the branch in the future. Thus, shortform ft future is simply "git push"
