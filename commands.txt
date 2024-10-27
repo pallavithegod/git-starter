@@ -1,0 +1,30 @@
+IMPORTANT TERMINAL COMMANDS FOR GIT AND GITHUB(SHORT)- [rest given in cheat sheet]
+
+cd "folder name- can be completed by clicking tab"  //to change folder which is inside the parent folder
+CD ..                                               //get out of current directory
+clear
+ls -a  //list files, including hidden
+
+1.)
+Configuring user information used across all local repositories:
+git config --global user.name “[firstname lastname]”   
+git config --global user.email “[valid-email]”         
+git config --global color.ui auto                      
+
+2.)
+SETUP & INIT: Configuring user information, initializing and cloning repositories
+git init                        
+git clone [url of project from github]
+git status //types- modified (content changed), untracked (new file)
+                                        |
+                                        |
+                             staged (added changes)
+                                        |
+                                        |   
+                    unmodified (final stage when changes are commited)           
+                                        
+git add [file name] //eg: git add index.html 
+git add .           //changes of all files ADDED
+git commit [some message]    //meaningful message for our reference
+
+git push origin main  //final step to upload changes to github(LOCAL-->REMOTE)
